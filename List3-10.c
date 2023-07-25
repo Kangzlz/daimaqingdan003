@@ -59,7 +59,7 @@ int main(void){
         count_no(judge);
 
         disp_result(judge);
-    }while(win_no<3||lose_no<3);
+    }while(win_no<3&&lose_no<3);
 
     printf(win_no==3 ? "\n□你赢了。\n" : "\n□你输了。\n");
 
