@@ -82,6 +82,7 @@ int main(void){
 
     start=clock();
 
+  do{  
     do{
         printf("请输入：");
         scanf("%s",buff);
@@ -93,6 +94,7 @@ int main(void){
             case 2:puts("\a请不要输入除数字以外的字符。");   break;
             case 3:puts("\a请不要输入相同的数字。");   break;
         }
+        }while(chk!=0);
         
         try_no++;
         judge(buff,no,&hit,&blow);
